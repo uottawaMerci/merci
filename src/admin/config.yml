@@ -8,11 +8,11 @@ media_folder: "src/resources/img"
 public_folder: "/resources/img"
 
 collections:
-  -name: "home"
-   label: "Home"
-   folder: "src/index.md"
-   editor:
-    preview: true
-   fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Text", name:"text", widget: "string" }
+  - name: "home"
+    label: "Home"
+    folder: "src/index.md"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Text", name:"text", widget: "string" }
