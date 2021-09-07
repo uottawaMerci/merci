@@ -14,7 +14,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        folder: "src/index.md"
+        file: "src/index.md"
         editor:
           preview: true
         fields:
