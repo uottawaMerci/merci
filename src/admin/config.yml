@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: BiigFish/uotawa-mec
   branch: main # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
@@ -8,11 +9,14 @@ media_folder: "src/resources/img"
 public_folder: "/resources/img"
 
 collections:
-  - label: "Home"
-    name: "home"
-    folder: "src/index.md"
-    editor:
-      preview: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Text", name: "text", widget: "string" }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        folder: "src/index.md"
+        editor:
+          preview: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
