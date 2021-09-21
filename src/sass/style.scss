@@ -196,11 +196,12 @@ footer .onyx a {
     border: solid 50px $primary-color;
 }
 .page-content ul {
-    list-style: inside;
+    list-style: outside;
     padding: 0;
     display: inline-block;
     margin: auto;
     text-align: initial;
+    margin-left: 1em;
 }
 .page-content ul li::marker {
     color: $primary-color;
@@ -285,5 +286,10 @@ footer .onyx a {
     }
     .donate-equipment, .donate-money {
         filter: grayscale(0);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .page-content{
+        border-width: 30px;
     }
 }
