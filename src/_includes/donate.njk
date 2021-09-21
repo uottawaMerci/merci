@@ -1,0 +1,33 @@
+---
+layout: base.njk
+---
+
+<div class="banner pages">
+    <div class="title-container">
+        <div class="title-text">
+            <a href="/"><h1>{{ settings.name }}</h1></a>
+        </div>
+    </div>
+</div>
+<div class="page-title">
+    {% if page.url == "/equipment-donations/" or page.url == "/monetary-donations/"%}
+        <a href="/donate">
+    {% else %}
+        <a href="/">
+    {% endif %}
+            <div class="back">&#129032; Back</div>
+        </a>
+    <h2>{{title}}</h2>
+</div>
+
+<div class="donate-container">
+    <a href="/equipment-donations" class="donate-equipment">
+        <h3>{{button1Title}}</h3>
+        <p>{{button1Text}}</p>
+    </a>
+    <a href="/monetary-donations" class="donate-money">
+        <h3>{{button2Title}}</h3>
+        <p>{{button2Text}}</p>
+    </a>
+</div>
+<div class="clearfix"></div>

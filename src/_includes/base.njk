@@ -2,13 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<title>{{page.title}}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css" />
-	<link rel="icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" />
+	<link rel="icon" href="/resources/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-	<h1>{{ title }}</h1>
-    <p>{{ text }}</p>
+	<div class="demo">
+	<div class="alert-container" style="display:{{ settings.AlertBanner }}">
+		<div class="alert-text">
+			<p><span class="i-icon">&#9432;</span><a href="/alert"><span class="hover-text">{{ settings.AlertText }}</span>&#10095;</a></p>
+		</div>
+	</div>
+	{{ content | safe }}
+</div>
+<footer>
+	<div class="sponsor">
+		<a href="https://www.rbcroyalbank.com/personal.html">
+			<img src="/resources/img/RBC_Royal_Bank.svg.png">
+		</a>
+		<p>Sponsor since OCT 2018</p>
+	</div>
+    <div class="onyx">
+        <a href="https://www.onyxonline.ca/">Ottawa Web Design | Created by ONYX Online</a>
+    </div>
+</footer>
+
 </body>
 </html>

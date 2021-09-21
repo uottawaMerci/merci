@@ -1,5 +1,6 @@
 ---
 title: home
-layout: base.njk
-text: this is a test
+layout: home.njk
+DonateButton: DONATE TODAY
+video: "/resources/img/Spencer-West.mp4"
 ---

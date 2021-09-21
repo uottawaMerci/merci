@@ -12,11 +12,75 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home"
+      - label: "Home Page"
         name: "home"
         file: "src/index.md"
         editor:
           preview: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
+          - { label: "Donate Button", name: "DonateButton", widget: "string" }
+          - label: "Video"
+            name: "video"
+            widget: "file"
+            default: "/resources/img/Spencer-West.mp4"
+      - label: "Donate Page"
+        name: "donate"
+        file: "src/donate.md"
+        editor:
+          preview: true
+        fields:
+          - { label: "Button1 Title", name: "button1Title", widget: "string" }
+          - { label: "Button1 Text", name: "button1Text", widget: "string" }
+          - { label: "Button2 Title", name: "button2Title", widget: "string" }
+          - { label: "Button2 Text", name: "button2Text", widget: "string" }
+      - label: "Equipment Donations Page"
+        name: "equipment-donations"
+        file: "src/equipment-donations"
+        editor:
+          preview: true
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Button Link", name: "buttonlink", widget: "string" }
+          - { label: "Button Text", name: "buttontext", widget: "string" }
+      - label: "Monetary Donations Page"
+        name: "monetary-donations"
+        file: "src/monetary-donations"
+        editor:
+          preview: true
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Button Link", name: "buttonlink", widget: "string" }
+          - { label: "Button Text", name: "buttontext", widget: "string" }
+      - label: "About Page"
+        name: "about"
+        file: "src/about"
+        editor:
+          preview: true
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact Page"
+        name: "contact"
+        file: "src/contact"
+        editor:
+          preview: true
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Alert Page"
+        name: "alert"
+        file: "src/alert"
+        editor:
+          preview: true
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Meta Settings"
+    name: "settings"
+    file: "src/_data/settings.yaml"
+    fields:
+      - { label: Title, name: name, widget: string }
+      - label: "Alert Banner"
+        name: "AlertBanner"
+        widget: "select"
+        options:
+          - { label: "Show", value: "block" }
+          - { label: "Hide", value: "hidden" }
+      - { label: Alert, name: AlertText, widget: string }
