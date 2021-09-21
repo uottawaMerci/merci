@@ -79,11 +79,19 @@ collections:
         name: "settings"
         file: "src/_data/settings.yaml"
         fields:
-          - { label: Title, name: name, widget: string }
+          - { label: "Title", name: "name", widget: "string" }
           - label: "Alert Banner"
             name: "AlertBanner"
             widget: "select"
             options:
               - { label: "Show", value: "block" }
               - { label: "Hide", value: "hidden" }
-          - { label: Alert, name: AlertText, widget: string }
+          - { label: "Alert", name: "AlertText", widget: "string" }
+          - label: "Sponsors"
+            name: "sponsor"
+            widget: "list"
+            create: "true"
+            fields:
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Message", name: "message", widget: "string" }

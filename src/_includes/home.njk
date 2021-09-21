@@ -61,12 +61,14 @@
 </div>
 
 <footer>
-	<div class="sponsor">
-		<a href="https://www.rbcroyalbank.com/personal.html">
-			<img src="/resources/img/RBC_Royal_Bank.svg.png">
-		</a>
-		<p>Sponsor since OCT 2018</p>
-	</div>
+    {% for sponsor in settings.sponsor %}
+        <div class="sponsor">
+            <a href="{{ sponsor.link }}">
+                <img src="{{ sponsor.image }}">
+            </a>
+            <p>{{ sponsor.message }}</p>
+        </div>
+    {% endfor %}
     <div class="onyx">
         <a href="https://www.onyxonline.ca/">Ottawa Web Design | Created by ONYX Online</a>
     </div>
@@ -74,5 +76,3 @@
 
 </body>
 </html>
-
-

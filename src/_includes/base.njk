@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{page.title}}</title>
+	<meta name="keywords" content="MEC, medical equipment, medical equipment collection, uottawa">
+	<meta name="description" content="The Medical Equipment Collection (MEC) Foundation is a charitable club based at the University of Ottawa. The foundation seeks for unused medical equipment in the community and redistributes it to people who are unable to purchase new equipment.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css" />
 	<link rel="icon" href="/resources/favicon.ico">
@@ -19,12 +21,14 @@
 	{{ content | safe }}
 </div>
 <footer>
-	<div class="sponsor">
-		<a href="https://www.rbcroyalbank.com/personal.html">
-			<img src="/resources/img/RBC_Royal_Bank.svg.png">
-		</a>
-		<p>Sponsor since OCT 2018</p>
-	</div>
+	{% for sponsor in settings.sponsor %}
+        <div class="sponsor">
+            <a href="{{ sponsor.link }}">
+                <img src="{{ sponsor.image }}">
+            </a>
+            <p>{{ sponsor.message }}</p>
+        </div>
+    {% endfor %}
     <div class="onyx">
         <a href="https://www.onyxonline.ca/">Ottawa Web Design | Created by ONYX Online</a>
     </div>
