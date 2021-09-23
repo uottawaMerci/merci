@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title>{{page.title}}</title>
     <meta name="keywords" content="MEC, medical equipment, medical equipment collection, uottawa">
 	<meta name="description" content="The Medical Equipment Collection (MEC) Foundation is a charitable club based at the University of Ottawa. The foundation seeks for unused medical equipment in the community and redistributes it to people who are unable to purchase new equipment.">
 	<meta property="og:title" content="Medical Equipment Collection Foundation">
 	<meta property="og:image" content="/resources/img/logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
 	<link rel="icon" href="/resources/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="home">
@@ -22,14 +25,19 @@
 	</div>
 
 
-<div class="banner">
+<div class="banner home">
     <div class="title-container">
         <div class="title-text">
-            <h1>{{ settings.name }}</h1>
+            <h1>Medical</h1>
+            <h1>Equipment</h1>
+            <h1>Redistribution</h1>
+            <h1>Collaborative</h1>
+            <h1>Initiative</h1>
         </div>
     </div>
 
     <div class="donate-button-container">
+        <img src="{{ settings.logo }}">
         <a href="donate">
                 <h3>{{ DonateButton }}</h3>
         </a>
@@ -51,7 +59,7 @@
 
 <div class="media">
     <div class="video-button" id="myButton" type="button">
-        &#9658;
+        <span class="right-pointing-triangle">&nbsp;</span>
     </div>
     <div class="video-container">
         <video id="myVideo" controls>

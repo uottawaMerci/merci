@@ -59,9 +59,18 @@ a {
     padding-right: 20px;
     border-right: solid 20px black;
 }
+.title-text {
+    margin: 35px 0;
+}
 .title-text h1 {
     font-size: 7vw;
+    color: black;
+    margin: 0;
+}
+.home .title-text h1::first-letter {
     color: white;
+    width: 35px;
+    font-family: 'Roboto Mono', monospace;
 }
 .banner {
     background-color: white;
@@ -71,6 +80,13 @@ a {
     vertical-align: top;
     height: 100%;
     margin-top: 100px;
+}
+.donate-button-container img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .donate-button-container h3 {
     display: inline-block;
@@ -95,13 +111,15 @@ a {
     margin: 20px;
     color: black;
 }
+.donate-button-container .nav h4 {
+    font-size: 20px;
+}
 .donate-button-container .nav a:hover{
     color: $primary-color;
 }
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    padding: 0 25px 25px 25px;
+    font-size: 25px;
     text-align: center;
     text-decoration: none;
   }
@@ -122,12 +140,19 @@ a {
     transform: translate(-50%, -50%);
     z-index: 2;
     color: white;
-    font-size: 100px;
-    border: solid 4px white;
-    border-radius: 50%;
     width: 115px;
     cursor: pointer;
 }
+.right-pointing-triangle {
+    border: solid 4px white;
+    border-radius: 50%;
+    font-size: 100px;
+    width: 100px;
+    height:100px;
+}
+.right-pointing-triangle::after {
+    content: "\25B6 \FE0E";
+  }
 video {
     width: 100%;
     height: auto;
@@ -170,23 +195,38 @@ footer .onyx a {
     border-right: 0;
     padding:0
 }
+.pages .title-text {
+    margin:10px;
+}
+.pages .title-text img {
+    display: inline;
+    width: 60px;
+    height: auto;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    vertical-align: middle;
+}
 .pages .title-text h1 {
-    font-size: 40px;
+    display: inline;
+    font-size: 75px;
     margin-left: 20px;
-    margin-right: 20px;
+    color: white;
+    vertical-align: middle;
+}
+.pages .title-text .back-title {
+    font-size: 60px;
+    margin-right: 15px;
+}
+.pages .title-text:hover {
+    margin-left:40px;
+    transition-duration: 1s;
+    transition-property: margin;
 }
 .page-title h2 {
     color: $primary-color;
     text-align: center;
     font-size: 35px;
-}
-.back {
-    color: $primary-color;
-    position: absolute;
-    font-size: 35px;
-    margin-left: 15px;
-    margin-top: -10px;
-
 }
 .page-content {
     max-width: 900px;
@@ -194,6 +234,10 @@ footer .onyx a {
     text-align: center;
     padding: 15px;
     border: solid 50px $primary-color;
+    margin-bottom: 30px;
+}
+.page-content h2 {
+    color: $primary-color;
 }
 .page-content ul {
     list-style: outside;
@@ -281,7 +325,10 @@ footer .onyx a {
     .title-container {
         padding: 0;
     }
-    .title-text h1 {
+    .home .title-container .title-text h1 {
+        font-size: 13vw;
+    }
+    .title-text {
         margin-left:20px;
     }
     .back {
@@ -294,5 +341,14 @@ footer .onyx a {
 @media only screen and (max-width: 500px) {
     .page-content{
         border-width: 30px;
+    }
+    .pages .title-text img {
+        width: 45px;
+    }
+    .pages .title-text h1 {
+        font-size: 60px;
+    }
+    .pages .title-text .back-title {
+        font-size: 50px;
     }
 }
