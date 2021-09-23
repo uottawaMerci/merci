@@ -82,11 +82,11 @@ a {
     margin-top: 100px;
 }
 .donate-button-container img {
-    width: 60px;
+    width: 100px;
     height: auto;
     display: block;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .donate-button-container h3 {
     display: inline-block;
@@ -112,7 +112,7 @@ a {
     color: black;
 }
 .donate-button-container .nav h4 {
-    font-size: 20px;
+    font-size: 30px;
 }
 .donate-button-container .nav a:hover{
     color: $primary-color;
@@ -312,9 +312,15 @@ footer .onyx a {
     clear: both;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .donate-button-container {
         margin-top: 30px;
+    }
+    .donate-button-container .nav h4 {
+        font-size: 20px;
+    }
+    .donate-button-container img {
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -330,6 +336,9 @@ footer .onyx a {
     }
     .title-text {
         margin-left:20px;
+    }
+    .donate-button-container h3 {
+        font-size: 26px;
     }
     .back {
         position: relative;
@@ -350,5 +359,13 @@ footer .onyx a {
     }
     .pages .title-text .back-title {
         font-size: 50px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .title-text h1 {
+        font-size: 85px;
+    }
+    .donate-button-container h3 {
+        font-size: 48px;
     }
 }
