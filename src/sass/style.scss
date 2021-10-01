@@ -79,10 +79,10 @@ a {
     text-align: center;
     vertical-align: top;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .donate-button-container img {
-    width: 100px;
+    width: 150px;
     height: auto;
     display: block;
     margin: auto;
@@ -321,6 +321,7 @@ footer .onyx a {
     }
     .donate-button-container img {
         margin-bottom: 20px;
+        width: 100px;
     }
 }
 @media only screen and (max-width: 700px) {
