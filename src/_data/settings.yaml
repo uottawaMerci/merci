@@ -1,7 +1,7 @@
 name: Medical Equipment Redistribution Collaborative Initiative
 name2: MERCI
 logo: /resources/img/llogo.png
-AlertBanner: block
+AlertBanner: hidden
 AlertText: "COVID-19: last update (September 5 2021)"
 sponsor:
   - image: /resources/img/RBC_Royal_Bank.svg.png
