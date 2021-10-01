@@ -15,8 +15,6 @@ collections:
       - label: "Home Page"
         name: "home"
         file: "src/index.md"
-        editor:
-          preview: true
         fields:
           - { label: "Donate Button", name: "DonateButton", widget: "string" }
           - label: "Video"
@@ -26,50 +24,29 @@ collections:
       - label: "Donate Page"
         name: "donate"
         file: "src/donate.md"
-        editor:
-          preview: true
         fields:
-          - { label: "Button1 Title", name: "button1Title", widget: "string" }
-          - { label: "Button1 Text", name: "button1Text", widget: "string" }
-          - { label: "Button2 Title", name: "button2Title", widget: "string" }
-          - { label: "Button2 Text", name: "button2Text", widget: "string" }
-      - label: "Equipment Donations Page"
-        name: "equipment-donations"
-        file: "src/equipment-donations.md"
-        editor:
-          preview: true
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Button Link", name: "buttonlink", widget: "string" }
-          - { label: "Button Text", name: "buttontext", widget: "string" }
-      - label: "Monetary Donations Page"
-        name: "monetary-donations"
-        file: "src/monetary-donations.md"
-        editor:
-          preview: true
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Button Link", name: "buttonlink", widget: "string" }
-          - { label: "Button Text", name: "buttontext", widget: "string" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Equipment Box", name: "body", widget: "markdown" }
+          - { label: "Equipment Button Link", name: "button1link", widget: "string" }
+          - { label: "Equipment Button Text", name: "button1text", widget: "string" }
+          - { label: "Monetary Title", name: "monetaryTitle", widget: "string" }
+          - { label: "Monetary subTitle", name: "monetaryTextTitle", widget: "string" }
+          - { label: "Monetary Text", name: "monetaryText", widget: "string" }
+          - { label: "Monetary Button Link", name: "button2link", widget: "string" }
+          - { label: "Monetary Button Text", name: "button2text", widget: "string" }
       - label: "About Page"
         name: "about"
         file: "src/about.md"
-        editor:
-          preview: true
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Contact Page"
         name: "contact"
         file: "src/contact.md"
-        editor:
-          preview: true
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Alert Page"
         name: "alert"
         file: "src/alert.md"
-        editor:
-          preview: true
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Settings"
@@ -79,7 +56,9 @@ collections:
         name: "settings"
         file: "src/_data/settings.yaml"
         fields:
-          - { label: "Title", name: "name", widget: "string" }
+          - { label: "Website Title", name: "name", widget: "string" }
+          - { label: "Website Short Title", name: "name2", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
           - label: "Alert Banner"
             name: "AlertBanner"
             widget: "select"
@@ -92,6 +71,6 @@ collections:
             widget: "list"
             create: "true"
             fields:
-              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
               - { label: "Link", name: "link", widget: "string" }
               - { label: "Message", name: "message", widget: "string" }
