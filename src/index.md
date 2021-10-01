@@ -3,4 +3,5 @@ title: "Medical Equipment Collection Foundation | uOttawa | MEC"
 layout: home.njk
 DonateButton: DONATE TODAY
 video: "/resources/img/Spencer-West.mp4"
+videoposter: "/resources/img/Spencer-West_image.jpg"
 ---

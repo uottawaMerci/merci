@@ -21,6 +21,7 @@ collections:
             name: "video"
             widget: "file"
             default: "/resources/img/Spencer-West.mp4"
+          - { label: "Video Poster", name: "videoposter", widget: "image" }
       - label: "Donate Page"
         name: "donate"
         file: "src/donate.md"
