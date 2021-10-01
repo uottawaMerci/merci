@@ -21,7 +21,6 @@ collections:
             name: "video"
             widget: "file"
             default: "/resources/img/Spencer-West.mp4"
-          - { label: "Video Poster", name: "videoposter", widget: "image" }
       - label: "Donate Page"
         name: "donate"
         file: "src/donate.md"
@@ -32,7 +31,7 @@ collections:
           - { label: "Equipment Button Text", name: "button1text", widget: "string" }
           - { label: "Monetary Title", name: "monetaryTitle", widget: "string" }
           - { label: "Monetary subTitle", name: "monetaryTextTitle", widget: "string" }
-          - { label: "Monetary Text", name: "monetaryText", widget: "string" }
+          - { label: "Monetary Text", name: "monetaryText", widget: "text" }
           - { label: "Monetary Button Link", name: "button2link", widget: "string" }
           - { label: "Monetary Button Text", name: "button2text", widget: "string" }
       - label: "About Page"
