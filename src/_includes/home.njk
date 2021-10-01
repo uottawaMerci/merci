@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>{{settings.name}}</title>
     <meta name="keywords" content="MEC, medical equipment, medical equipment collection, uottawa">
-	<meta name="description" content="The Medical Equipment Collection (MEC) Foundation is a charitable club based at the University of Ottawa. The foundation seeks for unused medical equipment in the community and redistributes it to people who are unable to purchase new equipment.">
-	<meta property="og:title" content="Medical Equipment Collection Foundation">
+	<meta name="description" content="The {{settings.name}} ({{settings.name2}}) Foundation is a charitable club based at the University of Ottawa. The foundation seeks for unused medical equipment in the community and redistributes it to people who are unable to purchase new equipment.">
+	<meta property="og:title" content="{{settings.name}}">
 	<meta property="og:image" content="/resources/img/logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,11 +28,9 @@
 <div class="banner home">
     <div class="title-container">
         <div class="title-text">
-            <h1>Medical</h1>
-            <h1>Equipment</h1>
-            <h1>Redistribution</h1>
-            <h1>Collaborative</h1>
-            <h1>Initiative</h1>
+            {% for titlelist in titlelist%}
+                <h1>{{titlelist.word}}</h1>
+            {% endfor %}
         </div>
     </div>
 

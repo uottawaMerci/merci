@@ -16,6 +16,12 @@ collections:
         name: "home"
         file: "src/index.md"
         fields:
+          - label: "Home Title"
+            name: "titlelist"
+            widget: "list"
+            create: "true"
+            fields:
+              - { label: "Word", name: "word", widget: "string" }
           - { label: "Donate Button", name: "DonateButton", widget: "string" }
           - label: "Video"
             name: "video"
