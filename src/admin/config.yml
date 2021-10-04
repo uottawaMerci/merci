@@ -34,21 +34,21 @@ collections:
             name: "facebookDisplay"
             widget: "select"
             options:
-              - { label: "Show", value: "block" }
+              - { label: "Show", value: "inline-block" }
               - { label: "Hide", value: "none" }
           - { label: "Instagram link", name: "instagram", widget: "string" }
           - label: "Instagram Visible"
             name: "instagramDisplay"
             widget: "select"
             options:
-              - { label: "Show", value: "block" }
+              - { label: "Show", value: "inline-block" }
               - { label: "Hide", value: "none" }          
           - { label: "Twitter link", name: "twitter", widget: "string" }
           - label: "Twitter Visible"
             name: "twitterDisplay"
             widget: "select"
             options:
-              - { label: "Show", value: "block" }
+              - { label: "Show", value: "inline-block" }
               - { label: "Hide", value: "none" }
       - label: "Donate Page"
         name: "donate"
