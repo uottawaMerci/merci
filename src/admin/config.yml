@@ -30,10 +30,26 @@ collections:
             widget: "file"
             default: "/resources/img/Spencer-West.mp4"
           - { label: "Facebook link", name: "facebook", widget: "string" }
+          - label: "Facebook Visible"
+            name: "facebookDisplay"
+            widget: "select"
+            options:
+              - { label: "Show", value: "block" }
+              - { label: "Hide", value: "none" }
           - { label: "Instagram link", name: "instagram", widget: "string" }
+          - label: "Instagram Visible"
+            name: "instagramDisplay"
+            widget: "select"
+            options:
+              - { label: "Show", value: "block" }
+              - { label: "Hide", value: "none" }          
           - { label: "Twitter link", name: "twitter", widget: "string" }
-
-
+          - label: "Twitter Visible"
+            name: "twitterDisplay"
+            widget: "select"
+            options:
+              - { label: "Show", value: "block" }
+              - { label: "Hide", value: "none" }
       - label: "Donate Page"
         name: "donate"
         file: "src/donate.md"
@@ -79,7 +95,7 @@ collections:
             widget: "select"
             options:
               - { label: "Show", value: "block" }
-              - { label: "Hide", value: "hidden" }
+              - { label: "Hide", value: "none" }
           - { label: "Alert", name: "AlertText", widget: "string" }
           - label: "Sponsors"
             name: "sponsor"

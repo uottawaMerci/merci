@@ -11,4 +11,7 @@ titlelist:
 facebook: https://www.facebook.com/uottawaMEC/
 instagram: https://www.instagram.com/uottawamec/
 twitter: https://twitter.com/uottawamec
+facebookDisplay: block
+instagramDisplay: block
+twitterDisplay: block
 ---
