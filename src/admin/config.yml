@@ -11,6 +11,8 @@ public_folder: "/resources/img"
 collections:
   - label: "Pages"
     name: "pages"
+    editor:
+      preview: false
     files:
       - label: "Home Page"
         name: "home"
@@ -57,6 +59,8 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Settings"
     name: "settings"
+    editor:
+      preview: false
     files:
       - label: "Meta Settings"
         name: "settings"
