@@ -29,6 +29,11 @@ collections:
             name: "video"
             widget: "file"
             default: "/resources/img/Spencer-West.mp4"
+          - { label: "Facebook link", name: "facebook", widget: "string" }
+          - { label: "Instagram link", name: "instagram", widget: "string" }
+          - { label: "Twitter link", name: "twitter", widget: "string" }
+
+
       - label: "Donate Page"
         name: "donate"
         file: "src/donate.md"

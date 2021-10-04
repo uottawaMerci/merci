@@ -8,4 +8,7 @@ titlelist:
   - word: Redistribution
   - word: Collaborative
   - word: Initiative
+facebook: https://www.facebook.com/uottawaMEC/
+instagram: https://www.instagram.com/uottawamec/
+twitter: https://twitter.com/uottawamec
 ---
