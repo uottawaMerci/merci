@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: BiigFish/uotawa-mec
+  repo: uottawaMerci/merci
   branch: main # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
