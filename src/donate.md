@@ -1,15 +1,17 @@
 ---
-title: DONATE
 layout: donate.njk
-
+title: DONATE
 button1link: https://docs.google.com/forms/d/e/1FAIpQLSf8sSu-ZLDiEpTYsdT8pE4W_OGVEG0VY83d28ZiTX_Eqfg4ng/viewform?usp=sf_link
 button1text: Equipment Donation Form
-button2link: https://www.paypal.com/donate?token=nMxSv8Q8zCJQoe2tu3QOyt-X4TlDpSuY3LzAIwbXHuG6oP5pj1zdt5BadNeuEwft2CeGW3yKvb14NMaB
-button2text: Donate Here
-
 monetaryTitle: MONETARY DONATIONS
-monetaryTextTitle: Don't have any medical equipment to donate but still want to contribute to the cause? Consider a monetary donation!
-monetaryText: 100% monetary donations go towards funding the purchase of specialized equipment for those with particular needs and/or disabilities in the community, supporting our equipment collection, storage, and delivery system, and our goal to becoming am Ontario registered non-for-profit organization.
+monetaryTextTitle: Don't have any medical equipment to donate but still want to
+  contribute to the cause? Consider a monetary donation!
+monetaryText: 100% monetary donations go towards our mission to get equipment in
+  the procession of people who need it most. This includes storage of equipment,
+  delivery of equipment, cleaning, refurbishment, etc. Thank you for donating to
+  our project!
+button2link: https://www.paypal.com/donate/?hosted_button_id=S8HAVLHAGQA46
+button2text: Donate Here
 ---
 ## EQUIPMENT DONATIONS ##
 ### Do you have any gently used medical equipment? We're always looking for equipment to collect and redistribute! ###
