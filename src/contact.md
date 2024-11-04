@@ -4,7 +4,7 @@ layout: pages.njk
 ---
 #### Emails:
 
-* NPO Board of Directors: [mercicanadaorg@gmail.com](mailto:mercicanadaorg@gmail.com)
+* NPO Board of Directors: [help@mercicanada.org](mailto:help@mercicanada.org)
 * UOttawa Chapter: [merci.ottawa@gmail.com](mailto:merci.ottawa@gmail.com)
 * Queens Chapter: [queensu.merci@gmail.com](mailto:queensu.merci@gmail.com)
 
