@@ -15,10 +15,10 @@
 </head>
 <body>
 	<div class="demo">
-	<div class="alert-container" style="display:{{ settings.AlertBanner }}">
-		<div class="alert-text">
-			<p><span class="i-icon">&#9432;</span><a href="/alert"><span class="hover-text">{{ settings.AlertText }}</span>&#10095;</a></p>
-		</div>
+	<div class="alert-container" style="display: none;">
+    	<div class="alert-text">
+        	<p><span class="i-icon">&#9432;</span><a href="/alert"><span class="hover-text">{{ settings.AlertText }}</span>&#10095;</a></p>
+    	</div>
 	</div>
 	{{ content | safe }}
 </div>
