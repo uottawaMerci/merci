@@ -73,11 +73,6 @@ collections:
         file: "src/contact.md"
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Alert Page"
-        name: "alert"
-        file: "src/alert.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
   - label: "Settings"
     name: "settings"
     editor:
